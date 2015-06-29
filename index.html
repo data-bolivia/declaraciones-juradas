@@ -1,1 +1,403 @@
-<h1>Hola github pages!!!</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <title>Patrimonio del Gabinete de EVO - DataBO</title>
+
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+
+    <link href="css/font-awesome-animation.css" rel="stylesheet" type="text/css">
+
+    <link href="css/main.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="100%"></a>
+            </div>
+            <ul class="nav navbar-right top-nav">
+                <li>
+                    <a href="#"><i class="fa fa-file-text fa-2x"></i><label>Declaraciones</label></a>
+                </li>
+                <li class="active">
+                    <a href="#"><i class="fa fa-user-secret fa-2x"></i><label>Funcionarios</label></a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Bitbucket Repositorio"><i class="fa fa-bitbucket fa-2x"></i></a>
+                </li>
+                <li>                    
+                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Página de Facebopok"><i class="fa fa-facebook-official fa-2x"></i></a>
+                </li>                
+            </ul>
+            <form class="nav navbar-right top-border">
+                <div class="col-md-3 text-center text-primary">
+                    <i class="fa fa-info-circle fa-2x"></i><p>Seleccione al menos un ministro<br/>para analizar el patrimonio</p>
+                </div>
+                <div class="col-md-4">
+                   <div class="form-group input-group">
+                        <input type="text" class="form-control" placeholder="Buscar Funcionario...">
+                        <span class="input-group-btn"><button class="btn btn-link" type="button"><i class="fa fa-search"></i></button></span>
+                   </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                      <select class="form-control">
+                          <option value="" disabled selected>Gestión</option>
+                          <option>2006</option>
+                          <option>2007</option>
+                          <option>2008</option>
+                          <option>2009</option>
+                          <option>2010</option>
+                          <option>2011</option>
+                          <option>2012</option>
+                          <option>2013</option>
+                          <option>2014</option>
+                          <option>2015</option>                              
+                      </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                  <button id="btn-analize" class="btn btn-primary pull-right" type="button" data-toggle="collapse" data-target="#courtain" aria-expanded="true" aria-controls="courtain" disabled>
+                    <i class="fa fa fa-line-chart fa-2x"></i> Analizar patrimonio
+                  </button>
+                </div>              
+              </ul>
+            </form>  
+        </nav>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div id="courtain" class="courtain collapse in">
+              <div class="text-center">
+                <div class="side-nav no-gutter">                         
+                  <div class="col-xs-6 col-md-1">
+                    <div class="thumbnail">                                    
+                        <div class="btn-checkbox">
+                          <input id="clickGreenCheckBox" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
+                          <label for="clickGreenCheckBox" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar">
+                              Gonzalo Medinacelli
+                            </div>                    
+                          </label>                                                              
+                        </div>                                     
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-md-1">
+                    <div class="thumbnail">                                    
+                        <div class="btn-checkbox">
+                          <input id="clickGreenCheckBox2" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
+                          <label for="clickGreenCheckBox2" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar">
+                              Gonzalo Medinacelli
+                            </div>                    
+                          </label>                                                              
+                        </div>                                     
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-md-1">
+                    <div class="thumbnail">                                    
+                        <div class="btn-checkbox">
+                          <input id="clickGreenCheckBox3" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
+                          <label for="clickGreenCheckBox3" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar">
+                              Gonzalo Medinacelli
+                            </div>                    
+                          </label>                                                              
+                        </div>                                     
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-md-1">
+                    <div class="thumbnail">                                    
+                        <div class="btn-checkbox">
+                          <input id="clickGreenCheckBox4" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
+                          <label for="clickGreenCheckBox4" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar">
+                              Gonzalo Medinacelli
+                            </div>                    
+                          </label>                                                              
+                        </div>                                     
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-md-1">
+                    <div class="thumbnail">                                    
+                        <div class="btn-checkbox">
+                          <input id="clickGreenCheckBox5" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
+                          <label for="clickGreenCheckBox5" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar">
+                              Gonzalo Medinacelli
+                            </div>                    
+                          </label>                                                              
+                        </div>                                     
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-md-1">
+                    <div class="thumbnail">                                    
+                        <div class="btn-checkbox">
+                          <input id="clickGreenCheckBox6" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
+                          <label for="clickGreenCheckBox6" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar">
+                              Gonzalo Medinacelli
+                            </div>                    
+                          </label>                                                              
+                        </div>                                     
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-md-1">
+                    <div class="thumbnail">                                    
+                        <div class="btn-checkbox">
+                          <input id="clickGreenCheckBox7" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
+                          <label for="clickGreenCheckBox7" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar">
+                              Gonzalo Medinacelli
+                            </div>                    
+                          </label>                                                              
+                        </div>                                     
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-md-1">
+                    <div class="thumbnail">                                    
+                        <div class="btn-checkbox">
+                          <input id="clickGreenCheckBox8" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
+                          <label for="clickGreenCheckBox8" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar">
+                              Gonzalo Medinacelli
+                            </div>                    
+                          </label>                                                              
+                        </div>                                     
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-md-1">
+                    <div class="thumbnail">                                    
+                        <div class="btn-checkbox">
+                          <input id="clickGreenCheckBox9" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
+                          <label for="clickGreenCheckBox9" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar">
+                              Gonzalo Medinacelli
+                            </div>                    
+                          </label>                                                              
+                        </div>                                     
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-md-1">
+                    <div class="thumbnail">                                    
+                        <div class="btn-checkbox">
+                          <input id="clickGreenCheckBox10" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
+                          <label for="clickGreenCheckBox10" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar">
+                              Gonzalo Medinacelli
+                            </div>                    
+                          </label>                                                              
+                        </div>                                     
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-md-1">
+                    <div class="thumbnail">                                    
+                        <div class="btn-checkbox">
+                          <input id="clickGreenCheckBox11" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
+                          <label for="clickGreenCheckBox11" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar">
+                              Gonzalo Medinacelli
+                            </div>                    
+                          </label>                                                              
+                        </div>                                     
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-md-1">
+                    <div class="thumbnail">                                    
+                        <div class="btn-checkbox">
+                          <input id="clickGreenCheckBox12" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
+                          <label for="clickGreenCheckBox12" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar">
+                              Gonzalo Medinacelli
+                            </div>                    
+                          </label>                                                              
+                        </div>                                     
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm btn-collapse" type="button" data-toggle="collapse" data-target="#courtain" aria-expanded="true" aria-controls="courtain">
+                  <i class="fa fa fa-angle-down fa-2x"></i>
+                </button>
+              </div>  
+            </div>
+            <!-- /.navbar-collapse -->
+        <div id="page-wrapper">
+
+                <div id="no-datos" class="col-md-12 text-center text-primary"> <!--Ocultar cuando hay datos-->
+                      <br/><br/><br/>
+                      <i class="fa fa-info-circle fa-3x"></i>
+                      <h4>Seleccione al menos un ministro<br/>para analizar el patrimonio</h4>
+                </div>
+
+                <div id="mensaje" class="col-md-12 text-center"> <!--Ocultar cuando no hay datos-->  <!--Mensaje que puede cambiar a no imcrementado-->
+                      <br/><br/><br/>
+                      <div class="alert alert-success alert-dismissible fade in" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <i class="fa fa fa-line-chart fa-2x pull-left"></i> El patrimonio se ha incrementado
+                      </div>
+                </div>
+
+                <div id="with-datos" class="no-gutter"> <!--style="display: none"--> <!--Ocultar cuando no hay datos-->
+                  <div class="col-md-2 col-lg-1 text-center">
+                    <div class="thumbnail active blue">                                    
+                        <div class="btn-checkbox">
+                          <input id="clickGreenCheckBox13" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales" checked>
+                          <label for="clickGreenCheckBox13" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar">
+                              Gonzalo Medinacelli
+                            </div>                    
+                          </label>                                                              
+                        </div>                                     
+                    </div><br/>
+                    <div class="thumbnail active red">                                    
+                        <div class="btn-checkbox">
+                          <input id="clickGreenCheckBox14" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
+                          <label for="clickGreenCheckBox14" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar">
+                              Gonzalo Medinacelli
+                            </div>                    
+                          </label>                                                              
+                        </div>                                     
+                    </div><br/>  
+                    <div class="thumbnail active green">                                    
+                        <div class="btn-checkbox">
+                          <input id="clickGreenCheckBox15" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
+                          <label for="clickGreenCheckBox15" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar">
+                              Gonzalo Medinacelli
+                            </div>                    
+                          </label>                                                              
+                        </div>                                     
+                    </div><br/>
+                    <div class="thumbnail active purple">                                    
+                        <div class="btn-checkbox">
+                          <input id="clickGreenCheckBox16" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
+                          <label for="clickGreenCheckBox16" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar">
+                              Gonzalo Medinacelli
+                            </div>                    
+                          </label>                                                              
+                        </div>                                     
+                    </div>                                        
+                  </div>
+                  <div class="col-md-10 col-lg-11">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-money"></i> Evolucion del patrimonio</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-line-chart"></div>
+                                <div class="text-right">
+                                    <a href="#">Ver comentarios <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                </div>  
+                  
+
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+    <!-- Flot Charts JavaScript -->
+    <!--[if lte IE 8]><script src="js/excanvas.min.js"></script><![endif]-->
+    <!--script src="js/plugins/flot/jquery.flot.js"></script>
+    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+    <script src="js/plugins/flot/flot-data.js"></script-->
+    <script>
+        $(function () {
+             $('[data-toggle="tooltip"]').tooltip()
+        })
+        var count = 0;
+       $(".side-nav .thumbnail .btn-checkbox .checkbox").click(function() {
+        if (this.checked){  
+          $("#btn-analize").removeAttr("disabled");
+          count = count+1;
+        }
+        else{
+          count = count-1;
+          if (count==0){
+            $("#btn-analize").attr("disabled", "disabled");         
+          }
+        }
+       });       
+    </script>
+</body>
+
+</html>

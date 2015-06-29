@@ -1,0 +1,33 @@
+[
+    {
+        "ci": "2763595",
+        "apellidos": "MORALES AYMA",
+        "nombres": "JUAN EVO",
+        "data": [
+            {
+                "declaracion_id": 405325,
+                "activos": 1127000,
+                "pasivos": 240000,
+                "neto": 887000,
+                "rentas": 244530,
+                "fecha_declaracion": "21/01/2006"
+            },
+            {
+                "declaracion_id": 918771,
+                "activos": 1684835,
+                "pasivos": 108609,
+                "neto": 1576226,
+                "rentas": 60000,
+                "fecha_declaracion": "21/01/2010"
+            },
+            {
+                "declaracion_id": 1625009,
+                "activos": 3071592,
+                "pasivos": 23744,
+                "neto": 3047848,
+                "rentas": 268200,
+                "fecha_declaracion": "24/10/2014"
+            }
+        ]
+    }
+]
