@@ -8,23 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>Patrimonio del Gabinete de EVO - DataBO</title>
 
 
@@ -39,365 +39,568 @@
     <link href="css/main.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
 
 <body>
 
-    <div id="wrapper">
+<div id="wrapper">
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="100%"></a>
-            </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="100%"></a>
+        </div>
+        <div class="navbar-collapse no-gutters collapse" id="bs-example-navbar-collapse-1" aria-expanded="true">
             <ul class="nav navbar-right top-nav">
-                <li>
-                    <a href="#"><i class="fa fa-file-text fa-2x"></i><label>Declaraciones</label></a>
-                </li>
                 <li class="active">
+                    <a href="index.html"><i class="fa fa-file-text fa-2x"></i><label>Declaraciones</label></a>
+                </li>
+                <!--li class="active">
                     <a href="#"><i class="fa fa-user-secret fa-2x"></i><label>Funcionarios</label></a>
+                </li-->
+                <li>
+                    <a href="preguntas.html" data-toggle="tooltip" data-placement="bottom" title="Preguntas Frecuentes"><i
+                            class="fa fa-question-circle fa-2x"></i><label>Preguntas Frecuentes</label></a>
                 </li>
                 <li>
-                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Bitbucket Repositorio"><i class="fa fa-bitbucket fa-2x"></i></a>
+                    <a href="presentacion/index.html" data-toggle="tooltip" data-placement="bottom" title="Preguntas Frecuentes"><i
+                            class="fa fa-slideshare fa-2x"></i><label>Presentación</label></a>
                 </li>
-                <li>                    
-                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Página de Facebopok"><i class="fa fa-facebook-official fa-2x"></i></a>
-                </li>                
+                <li class="opt-social">
+                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Bitbucket Repositorio"><i
+                            class="fa fa-bitbucket fa-2x"></i></a>
+                </li>
+                <li class="opt-social">
+                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Página de Facebopok"><i
+                            class="fa fa-facebook-official fa-2x"></i></a>
+                </li>
             </ul>
-            <form class="nav navbar-right top-border">
-                <div class="col-md-3 text-center text-primary">
-                    <i class="fa fa-info-circle fa-2x"></i><p>Seleccione al menos un ministro<br/>para analizar el patrimonio</p>
-                </div>
-                <div class="col-md-4">
-                   <div class="form-group input-group">
-                        <input type="text" class="form-control" placeholder="Buscar Funcionario...">
-                        <span class="input-group-btn"><button class="btn btn-link" type="button"><i class="fa fa-search"></i></button></span>
-                   </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="form-group">
-                      <select class="form-control">
-                          <option value="" disabled selected>Gestión</option>
-                          <option>2006</option>
-                          <option>2007</option>
-                          <option>2008</option>
-                          <option>2009</option>
-                          <option>2010</option>
-                          <option>2011</option>
-                          <option>2012</option>
-                          <option>2013</option>
-                          <option>2014</option>
-                          <option>2015</option>                              
-                      </select>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                  <button id="btn-analize" class="btn btn-primary pull-right" type="button" data-toggle="collapse" data-target="#courtain" aria-expanded="true" aria-controls="courtain" disabled>
-                    <i class="fa fa fa-line-chart fa-2x"></i> Analizar patrimonio
-                  </button>
-                </div>              
-              </ul>
-            </form>  
-        </nav>
-            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-            <div id="courtain" class="courtain collapse in">
-              <div class="text-center">
-                <div class="side-nav no-gutter">                         
-                  <div class="col-xs-6 col-md-1">
-                    <div class="thumbnail">                                    
-                        <div class="btn-checkbox">
-                          <input id="clickGreenCheckBox" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
-                          <label for="clickGreenCheckBox" ng-model="checkModel">
-                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
-                            <div class="thumbnail-bar">
-                              Gonzalo Medinacelli
-                            </div>                    
-                          </label>                                                              
-                        </div>                                     
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-1">
-                    <div class="thumbnail">                                    
-                        <div class="btn-checkbox">
-                          <input id="clickGreenCheckBox2" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
-                          <label for="clickGreenCheckBox2" ng-model="checkModel">
-                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
-                            <div class="thumbnail-bar">
-                              Gonzalo Medinacelli
-                            </div>                    
-                          </label>                                                              
-                        </div>                                     
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-1">
-                    <div class="thumbnail">                                    
-                        <div class="btn-checkbox">
-                          <input id="clickGreenCheckBox3" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
-                          <label for="clickGreenCheckBox3" ng-model="checkModel">
-                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
-                            <div class="thumbnail-bar">
-                              Gonzalo Medinacelli
-                            </div>                    
-                          </label>                                                              
-                        </div>                                     
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-1">
-                    <div class="thumbnail">                                    
-                        <div class="btn-checkbox">
-                          <input id="clickGreenCheckBox4" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
-                          <label for="clickGreenCheckBox4" ng-model="checkModel">
-                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
-                            <div class="thumbnail-bar">
-                              Gonzalo Medinacelli
-                            </div>                    
-                          </label>                                                              
-                        </div>                                     
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-1">
-                    <div class="thumbnail">                                    
-                        <div class="btn-checkbox">
-                          <input id="clickGreenCheckBox5" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
-                          <label for="clickGreenCheckBox5" ng-model="checkModel">
-                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
-                            <div class="thumbnail-bar">
-                              Gonzalo Medinacelli
-                            </div>                    
-                          </label>                                                              
-                        </div>                                     
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-1">
-                    <div class="thumbnail">                                    
-                        <div class="btn-checkbox">
-                          <input id="clickGreenCheckBox6" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
-                          <label for="clickGreenCheckBox6" ng-model="checkModel">
-                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
-                            <div class="thumbnail-bar">
-                              Gonzalo Medinacelli
-                            </div>                    
-                          </label>                                                              
-                        </div>                                     
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-1">
-                    <div class="thumbnail">                                    
-                        <div class="btn-checkbox">
-                          <input id="clickGreenCheckBox7" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
-                          <label for="clickGreenCheckBox7" ng-model="checkModel">
-                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
-                            <div class="thumbnail-bar">
-                              Gonzalo Medinacelli
-                            </div>                    
-                          </label>                                                              
-                        </div>                                     
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-1">
-                    <div class="thumbnail">                                    
-                        <div class="btn-checkbox">
-                          <input id="clickGreenCheckBox8" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
-                          <label for="clickGreenCheckBox8" ng-model="checkModel">
-                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
-                            <div class="thumbnail-bar">
-                              Gonzalo Medinacelli
-                            </div>                    
-                          </label>                                                              
-                        </div>                                     
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-1">
-                    <div class="thumbnail">                                    
-                        <div class="btn-checkbox">
-                          <input id="clickGreenCheckBox9" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
-                          <label for="clickGreenCheckBox9" ng-model="checkModel">
-                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
-                            <div class="thumbnail-bar">
-                              Gonzalo Medinacelli
-                            </div>                    
-                          </label>                                                              
-                        </div>                                     
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-1">
-                    <div class="thumbnail">                                    
-                        <div class="btn-checkbox">
-                          <input id="clickGreenCheckBox10" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
-                          <label for="clickGreenCheckBox10" ng-model="checkModel">
-                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
-                            <div class="thumbnail-bar">
-                              Gonzalo Medinacelli
-                            </div>                    
-                          </label>                                                              
-                        </div>                                     
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-1">
-                    <div class="thumbnail">                                    
-                        <div class="btn-checkbox">
-                          <input id="clickGreenCheckBox11" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
-                          <label for="clickGreenCheckBox11" ng-model="checkModel">
-                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
-                            <div class="thumbnail-bar">
-                              Gonzalo Medinacelli
-                            </div>                    
-                          </label>                                                              
-                        </div>                                     
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-1">
-                    <div class="thumbnail">                                    
-                        <div class="btn-checkbox">
-                          <input id="clickGreenCheckBox12" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
-                          <label for="clickGreenCheckBox12" ng-model="checkModel">
-                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
-                            <div class="thumbnail-bar">
-                              Gonzalo Medinacelli
-                            </div>                    
-                          </label>                                                              
-                        </div>                                     
-                    </div>
-                  </div>
-                </div>
-                <button class="btn btn-primary btn-sm btn-collapse" type="button" data-toggle="collapse" data-target="#courtain" aria-expanded="true" aria-controls="courtain">
-                  <i class="fa fa fa-angle-down fa-2x"></i>
-                </button>
-              </div>  
+        </div>
+        <form class="nav navbar-right top-border">
+
+            <div class="col-md-3 text-center text-primary">
+                <i class="fa fa-info-circle fa-2x"></i>
+                <p>Seleccione al menos un ministro<br/>para analizar el patrimonio</p>
             </div>
-            <!-- /.navbar-collapse -->
-        <div id="page-wrapper">
 
-                <div id="no-datos" class="col-md-12 text-center text-primary"> <!--Ocultar cuando hay datos-->
-                      <br/><br/><br/>
-                      <i class="fa fa-info-circle fa-3x"></i>
-                      <h4>Seleccione al menos un ministro<br/>para analizar el patrimonio</h4>
+            <div class="col-md-4">
+                <div class="form-group input-group">
+                    <input type="text" class="form-control" placeholder="Buscar Funcionario...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-link" type="button"><i class="fa fa-search"></i></button>
+                    </span>
                 </div>
+            </div>
 
-                <div id="mensaje" class="col-md-12 text-center"> <!--Ocultar cuando no hay datos-->  <!--Mensaje que puede cambiar a no imcrementado-->
-                      <br/><br/><br/>
-                      <div class="alert alert-success alert-dismissible fade in" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-                        <i class="fa fa fa-line-chart fa-2x pull-left"></i> El patrimonio se ha incrementado
-                      </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <select class="form-control">
+                        <option value="" disabled selected>Gestión</option>
+                        <option>2006</option>
+                        <option>2007</option>
+                        <option>2008</option>
+                        <option>2009</option>
+                        <option>2010</option>
+                        <option>2011</option>
+                        <option>2012</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                        <option>2015</option>
+                    </select>
                 </div>
+            </div>
+            <div class="col-md-3">
+                <button id="btn-analize" class="btn btn-primary pull-right" type="button" data-toggle="collapse"
+                        data-target="#courtain" aria-expanded="true" aria-controls="courtain" disabled>
+                    <i class="fa fa fa-line-chart fa-2x"></i> Analizar patrimonio
+                </button>
+            </div>
+            </ul>
+        </form>
+    </nav>
 
-                <div id="with-datos" class="no-gutter"> <!--style="display: none"--> <!--Ocultar cuando no hay datos-->
-                  <div class="col-md-2 col-lg-1 text-center">
-                    <div class="thumbnail active blue">                                    
+    <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+    <div id="courtain" class="courtain collapse in">
+        <div class="text-center">
+            <div class="side-nav no-gutter">
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
                         <div class="btn-checkbox">
-                          <input id="clickGreenCheckBox13" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales" checked>
-                          <label for="clickGreenCheckBox13" ng-model="checkModel">
-                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
-                            <div class="thumbnail-bar">
-                              Gonzalo Medinacelli
-                            </div>                    
-                          </label>                                                              
-                        </div>                                     
-                    </div><br/>
-                    <div class="thumbnail active red">                                    
-                        <div class="btn-checkbox">
-                          <input id="clickGreenCheckBox14" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
-                          <label for="clickGreenCheckBox14" ng-model="checkModel">
-                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
-                            <div class="thumbnail-bar">
-                              Gonzalo Medinacelli
-                            </div>                    
-                          </label>                                                              
-                        </div>                                     
-                    </div><br/>  
-                    <div class="thumbnail active green">                                    
-                        <div class="btn-checkbox">
-                          <input id="clickGreenCheckBox15" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
-                          <label for="clickGreenCheckBox15" ng-model="checkModel">
-                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
-                            <div class="thumbnail-bar">
-                              Gonzalo Medinacelli
-                            </div>                    
-                          </label>                                                              
-                        </div>                                     
-                    </div><br/>
-                    <div class="thumbnail active purple">                                    
-                        <div class="btn-checkbox">
-                          <input id="clickGreenCheckBox16" class="checkbox" type="checkbox" ng-click="markersdelete()" name="Sales">
-                          <label for="clickGreenCheckBox16" ng-model="checkModel">
-                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
-                            <div class="thumbnail-bar">
-                              Gonzalo Medinacelli
-                            </div>                    
-                          </label>                                                              
-                        </div>                                     
-                    </div>                                        
-                  </div>
-                  <div class="col-md-10 col-lg-11">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-money"></i> Evolucion del patrimonio</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div id="morris-line-chart"></div>
-                                <div class="text-right">
-                                    <a href="#">Ver comentarios <i class="fa fa-arrow-circle-right"></i></a>
+                            <input id="clickGreenCheckBox" class="checkbox" type="checkbox" data-value="2763595">
+                            <label for="clickGreenCheckBox" ng-model="checkModel">
+                                <img src="data/funcionarios/evo_morales__2763595.jpg"
+                                     class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    JUAN EVO MORALES AYMA
                                 </div>
-                            </div>
+                            </label>
                         </div>
-                  </div>
-                </div>  
-                  
+                    </div>
+                </div>
 
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox2" class="checkbox" type="checkbox" data-value="3007962">
+                            <label for="clickGreenCheckBox2" ng-model="checkModel">
+                                <img src="data/funcionarios/alvaro_garcia_linea__3007962.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    ÁLVARO MARCELO GARCÍA LINERA
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox3" class="checkbox" type="checkbox" data-value="2434792">
+                            <label for="clickGreenCheckBox3" ng-model="checkModel">
+                                <img src="data/funcionarios/david_choquehuanca__2434792.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    DAVID CHOQUEHUANCA CESPEDES
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox4" class="checkbox" type="checkbox" data-value="2663228">
+                            <label for="clickGreenCheckBox4" ng-model="checkModel">
+                                <img src="data/funcionarios/juan_ramon_quintana__2663228.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    JUAN RAMON QUINTANA TABORGA
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox5" class="checkbox" type="checkbox" data-value="2479835">
+                            <label for="clickGreenCheckBox5" ng-model="checkModel">
+                                <img src="data/funcionarios/hugo_moldiz__2479835.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    JOSE HUGO MOLDIZ MERCADO
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox6" class="checkbox" type="checkbox" data-value="2335722">
+                            <label for="clickGreenCheckBox6" ng-model="checkModel">
+                                <img src="data/funcionarios/carlos_romero__2335722.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    CARLOS G. ROMERO BONIFAZ
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox7" class="checkbox" type="checkbox" data-value="928553">
+                            <label for="clickGreenCheckBox7" ng-model="checkModel">
+                                <img src="data/funcionarios/jorge_ledezma__928553.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    JORGE LEDEZMA CORNEJO
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox8" class="checkbox" type="checkbox" data-value="2873713">
+                            <label for="clickGreenCheckBox8" ng-model="checkModel">
+                                <img src="data/funcionarios/rene_orellana_halkyer__2873713.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    RENE GONZALO ORELLANA HALKYER
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox9" class="checkbox" type="checkbox" data-value="2364274">
+                            <label for="clickGreenCheckBox9" ng-model="checkModel">
+                                <img src="data/funcionarios/luis_arce_catacora__2364274.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    LUIS ALBERTO ARCE CATACORA
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox10" class="checkbox" type="checkbox" data-value="82111">
+                            <label for="clickGreenCheckBox10" ng-model="checkModel">
+                                <img src="data/funcionarios/ana_veronica_ramos__82111.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    ANA VERONICA RAMOS MORALES
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox11" class="checkbox" type="checkbox" data-value="3618854">
+                            <label for="clickGreenCheckBox11" ng-model="checkModel">
+                                <img src="data/funcionarios/milton_claros_hinojosa__3618854.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    MILTON CLAROS HINOJOSA
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox12" class="checkbox" type="checkbox" data-value="3678427">
+                            <label for="clickGreenCheckBox12" ng-model="checkModel">
+                                <img src="data/funcionarios/felix_navarro_miranda__3678427.jpg" class="img-circle img-responsive img-center">
+
+                                <div class="thumbnail-bar">
+                                    FÉLIX CÉSAR NAVARRO MIRANDA
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox13" class="checkbox" type="checkbox" data-value="6025115">
+                            <label for="clickGreenCheckBox13" ng-model="checkModel">
+                                <img src="data/funcionarios/virginia_velasco_condori__6025115.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    VIRGINIA VELASCO CONDORI
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox14" class="checkbox" type="checkbox" data-value="464216">
+                            <label for="clickGreenCheckBox14" ng-model="checkModel">
+                                <img src="data/funcionarios/jose_trigoso__464216.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    JOSE GONZALO TRIGOSO AGUDO
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox15" class="checkbox" type="checkbox" data-value="6444570">
+                            <label for="clickGreenCheckBox15" ng-model="checkModel">
+                                <img src="data/funcionarios/ariana_campero_nava__6444570.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    ARIANA CAMPERO NAVA
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox16" class="checkbox" type="checkbox" data-value="3474138">
+                            <label for="clickGreenCheckBox16" ng-model="checkModel">
+                                <img src="data/funcionarios/maria_alexandra_moreira__3474138.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    MARIA A. MOREIRA LOPEZ
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox17" class="checkbox" type="checkbox" data-value="340252">
+                            <label for="clickGreenCheckBox17" ng-model="checkModel">
+                                <img src="data/funcionarios/roberto_aguilar__340252.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    ROBERTO IVAN AGUILAR GÓMEZ
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox18" class="checkbox" type="checkbox" data-value="3233369">
+                            <label for="clickGreenCheckBox18" ng-model="checkModel">
+                                <img src="data/funcionarios/nemesia_achacollo__3233369.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    NEMESIA ACHACOLLO TOLA
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox19" class="checkbox" type="checkbox" data-value="2989681">
+                            <label for="clickGreenCheckBox19" ng-model="checkModel">
+                                <img src="data/funcionarios/hugo_siles__2989681.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    HUGO JOSE SILES NUÑEZ DEL PRADO
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox20" class="checkbox" type="checkbox" data-value="3137804">
+                            <label for="clickGreenCheckBox20" ng-model="checkModel">
+                                <img src="data/funcionarios/lenny_valdivia__3137804.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    LENNY T. VALDIVIA BAUTISTA
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox21" class="checkbox" type="checkbox" data-value="3335003">
+                            <label for="clickGreenCheckBox21" ng-model="checkModel">
+                                <img src="data/funcionarios/pablo_cesar_groux__3335003.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    PABLO CÉSAR GROUX CANEDO
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox22" class="checkbox" type="checkbox" data-value="4001027">
+                            <label for="clickGreenCheckBox22" ng-model="checkModel">
+                                <img src="data/funcionarios/marianela_paco__4001027.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    MARIANELA  PACO DURÁN
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox23" class="checkbox" type="checkbox" data-value="2903651">
+                            <label for="clickGreenCheckBox23" ng-model="checkModel">
+                                <img src="data/funcionarios/tito_montano_rivera__2903651.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    TITO ROLANDO MONTAÑO RIVERA
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-2 col-lg-1">
+                    <div class="thumbnail">
+                        <div class="btn-checkbox">
+                            <input id="clickGreenCheckBox24" class="checkbox" type="checkbox" data-value="1866352">
+                            <label for="clickGreenCheckBox24" ng-model="checkModel">
+                                <img src="data/funcionarios/luis_sanchez_fernandez__1866352.jpg" class="img-circle img-responsive img-center">
+                                <div class="thumbnail-bar">
+                                    LUIS ALBERTO SANCHEZ FERNANDEZ
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="btn btn-primary btn-sm btn-collapse" type="button" data-toggle="collapse"
+                    data-target="#courtain" aria-expanded="true" aria-controls="courtain">
+                <i class="fa fa fa-angle-down fa-2x"></i>
+            </button>
+        </div>
+    </div>
+    <!-- /.navbar-collapse -->
+    <div id="page-wrapper">
+
+        <div id="no-datos" class="col-md-12 text-center text-primary"> <!--Ocultar cuando hay datos-->
+            <br/><br/><br/>
+            <i class="fa fa-info-circle fa-3x"></i>
+            <h4>Seleccione al menos un ministro<br/>para analizar el patrimonio</h4>
+        </div>
+
+        <div id="mensaje" class="col-md-12 text-center hidden">
+            <!--Ocultar cuando no hay datos-->
+            <!--Mensaje que puede cambiar a no imcrementado-->
+            <br/>
+            <br/>
+            <br/>
+            <div class="hidden alert alert-success alert-dismissible fade in" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                        aria-hidden="true">×</span></button>
+                <i class="fa fa fa-line-chart fa-2x pull-left"></i> El patrimonio se ha incrementado
+            </div>
+        </div>
+
+        <!-- *************** PATRIMONIO DE LOS FUNCIONARIOS SELECCIONADOS *************** -->
+        <div id="with-datos" class="no-gutter hidden"> <!--style="display: none"--> <!--Ocultar cuando no hay datos-->
+            <div class="col-md-2 col-lg-1 text-center">
+
+                <div class="thumbnail active blue sin_funcionario hidden">
+                    <div class="btn-checkbox">
+                        <input id="clickGreenCheckBox100" class="checkbox" type="checkbox" ng-click="markersdelete()"
+                               name="Sales" data-value="">
+                        <label for="clickGreenCheckBox100" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar"></div>
+                        </label>
+                    </div>
+                </div>
+                <br/>
+
+                <div class="thumbnail active red sin_funcionario hidden">
+                    <div class="btn-checkbox">
+                        <input id="clickGreenCheckBox200" class="checkbox" type="checkbox" ng-click="markersdelete()"
+                               name="Sales" data-value="">
+                        <label for="clickGreenCheckBox200" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar"></div>
+                        </label>
+                    </div>
+                </div>
+                <br/>
+
+                <div class="thumbnail active green sin_funcionario hidden">
+                    <div class="btn-checkbox">
+                        <input id="clickGreenCheckBox300" class="checkbox" type="checkbox" ng-click="markersdelete()"
+                               name="Sales" data-value="">
+                        <label for="clickGreenCheckBox300" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar"></div>
+                        </label>
+                    </div>
+                </div>
+                <br/>
+
+                <div class="thumbnail active purple sin_funcionario hidden">
+                    <div class="btn-checkbox">
+                        <input id="clickGreenCheckBox400" class="checkbox" type="checkbox" ng-click="markersdelete()"
+                               name="Sales" data-value>
+                        <label for="clickGreenCheckBox400" ng-model="checkModel">
+                            <img src="data/funcionarios/1.jpg" class="img-circle img-responsive img-center">
+                            <div class="thumbnail-bar"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ***************  PANEL DE GRÁFICOS *************** -->
+
+            <div class="col-md-10 col-lg-11">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-money"></i> Evolucion del patrimonio</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="morris-line-chart"></div>
+                        <div class="text-right">
+                            <a href="#">Ver comentarios <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- *************** *************** -->
 
         </div>
-        <!-- /#page-wrapper -->
+        <!-- **************************************************************************** -->
 
     </div>
-    <!-- /#wrapper -->
+    <!-- /#page-wrapper -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+</div>
+<!-- /#wrapper -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
 
-    <!-- Morris Charts JavaScript -->
-    <script src="js/plugins/morris/raphael.min.js"></script>
-    <script src="js/plugins/morris/morris.js"></script>
-    <script src="js/plugins/morris/morris-data.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
 
-    <!-- Flot Charts JavaScript -->
-    <!--[if lte IE 8]><script src="js/excanvas.min.js"></script><![endif]-->
-    <!--script src="js/plugins/flot/jquery.flot.js"></script>
-    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
-    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
-    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
-    <script src="js/plugins/flot/flot-data.js"></script-->
-    <script>
-        $(function () {
-             $('[data-toggle="tooltip"]').tooltip()
-        })
-        var count = 0;
-       $(".side-nav .thumbnail .btn-checkbox .checkbox").click(function() {
-        if (this.checked){  
-          $("#btn-analize").removeAttr("disabled");
-          count = count+1;
-        }
-        else{
-          count = count-1;
-          if (count==0){
-            $("#btn-analize").attr("disabled", "disabled");         
-          }
-        }
-       });       
-    </script>
+<!-- Morris Charts JavaScript -->
+<script src="js/plugins/morris/raphael.min.js"></script>
+<script src="js/plugins/morris/morris.js"></script>
+<script src="js/plugins/morris/morris-data.js"></script>
+
+<!-- Flot Charts JavaScript -->
+<!--[if lte IE 8]>
+<script src="js/excanvas.min.js"></script><![endif]-->
+<!--script src="js/plugins/flot/jquery.flot.js"></script>
+<script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+<script src="js/plugins/flot/jquery.flot.resize.js"></script>
+<script src="js/plugins/flot/jquery.flot.pie.js"></script>
+<script src="js/plugins/flot/flot-data.js"></script-->
+<script src="js/declaraciones/main.js"></script>
 </body>
 
 </html>

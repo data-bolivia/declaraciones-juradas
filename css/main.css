@@ -65,6 +65,7 @@ option{
 .top-nav>li>a label{
     margin: 6px 0px 0px 10px;
 }
+.top-nav>li.active>a,
 .top-nav>li>a:hover,
 .top-nav>li>a:focus,
 .top-nav>.open>a,
@@ -91,7 +92,7 @@ option{
 }
 .top-border{
   border-top: 1px solid #0c84e4;
-  padding: 8px 0px;
+  padding: 8px;
 }
 .top-border p{
   line-height: 1em;
@@ -173,6 +174,7 @@ ul.alert-dropdown {
     overflow-y: auto;
     height: 350px;
     background-color: #2196f3;
+    border-bottom: 5px solid #2196f3;
     padding: 4px 2px;    
     -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);  
@@ -199,7 +201,9 @@ ul.alert-dropdown {
     color: #fff;
 }
 .side-nav .thumbnail{
-  margin: 0px 0px 4px 0px;  
+    margin: 0px 0px 4px 0px;
+    height: 130px; 
+    width: 100%;
 }
 .thumbnail {
   display: inline-block;
@@ -229,9 +233,10 @@ ul.alert-dropdown {
 }
 .thumbnail-bar{
   line-height: 1.2em;
-  padding: 0px;
+  padding: 5px;
   word-break: break-word;
   text-align: center;
+  font-size: 0.8em;
 }
 .thumbnail .btn-checkbox {
   position: relative;
@@ -319,3 +324,81 @@ ul.alert-dropdown {
 .panel-yellow a:hover {
     color: #df8a13;
 }
+h3 {
+  color: #2196f3;
+}
+#with-datos .thumbnail {
+  width: 100%;
+}
+.bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+.bs-callout-info {
+  border-left-color: #2196f3;
+}
+.bs-callout-info h5 {
+  color: #2196f3;
+}
+.bs-callout h5 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.main-container {
+  margin-top: -60px;
+}
+
+/*MOBILE*/
+@media(max-width:767px) {
+  body {
+    padding: 0;
+  }
+  html, body {
+    height: 100%;
+  }  
+  .navbar-fixed-top{
+    position: static;
+    margin: 0px;
+  }
+  .courtain.collapse {
+    position: static;
+  }
+  .courtain.collapse.in {
+    top: 283px;
+  }
+  .navbar-default .navbar-collapse{
+    border-color: transparent;
+    border-top: 1px solid #2196f3;
+  }  
+  .top-nav>li {
+    display: block;
+    float: none;
+    border-bottom: 1px solid #2196f3;
+  }
+  .top-nav>li.opt-social{
+    display: inline-block;
+    float: left;
+    border: none;
+  } 
+  #btn-analize{
+    width: 100%;
+  }
+  .courtain.collapse.in .side-nav{
+    height: 170px;
+    padding: 4px 2px;
+  }
+  .courtain.collapse .side-nav{
+    height: 0px;
+    padding: 0px;
+  }  
+  #with-datos .thumbnail {
+    width: 200px;
+  }
+  .main-container {
+    margin-top: 0px;
+  }
+}
+
