@@ -8,32 +8,32 @@ $(function () {
         // Chart data records -- each entry in this array corresponds to a point on
         // the chart.
         data: [
-            { Año: '2001', Patrimonio: 80200},
-            { Año: '2002', Patrimonio: 78300},
-            { Año: '2003', Patrimonio: 82000 },
-            { Año: '2004', Patrimonio: 83900 },
-            { Año: '2005', Patrimonio: 79200 },
-            { Año: '2006', Patrimonio: 85900 },
-            { Año: '2007', Patrimonio: 79000 },
-            { Año: '2008', Patrimonio: 168000 },
-            { Año: '2009', Patrimonio: 159200 },
-            { Año: '2010', Patrimonio: 14200 },
-            { Año: '2011', Patrimonio: 88200 },
-            { Año: '2012', Patrimonio: 88900 },
-            { Año: '2013', Patrimonio: 81900 },
-            { Año: '2014', Patrimonio: 84900 },
-            { Año: '2015', Patrimonio: 87000 },
+            { Año: '2001', P1: 80200, P2: 10000 },
+            { Año: '2002', P1: 78300, P2: 10000 },
+            { Año: '2003', P1: 82000, P2: 10000 },
+            { Año: '2004', P1: 83900, P2: 10000 },
+            { Año: '2005', P1: 79200, P2: 10000 },
+            { Año: '2006', P1: 85900, P2: 10000 },
+            { Año: '2007', P1: 79000, P2: 10000 },
+            { Año: '2008', P1: 168000, P2: 10000 },
+            { Año: '2009', P1: 159200, P2: 10000 },
+            { Año: '2010', P1: 14200, P2: 10000 },
+            { Año: '2011', P1: 88200, P2: 10000 },
+            { Año: '2012', P1: 88900, P2: 10000 },
+            { Año: '2013', P1: 81900, P2: 10000 },
+            { Año: '2014', P1: 84900, P2: 10000 },
+            { Año: '2015', P1: 87000, P2: 10000 },
         ],
         // The name of the data record attribute that contains x-Patrimonios.
         xkey: 'Año',
         // A list of names of data record attributes that contain y-Patrimonios.
-        ykeys: ['Patrimonio'],
+        ykeys: ['P1', 'P2', 'P3', 'P4'],
         // Labels for the ykeys -- will be displayed when you hover over the
         // chart.
-        labels: ['Patrimonio'],
+        labels: ['Patrimonio', 'pp'],
         // Disables line smoothing
         smooth: false,
-        resize: true
+        resize: false
     });
 });
 

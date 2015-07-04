@@ -58,12 +58,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="100%"></a>
+            <a class="navbar-brand" href="demo.html"><img src="images/logo.png" height="100%"></a>
         </div>
         <div class="navbar-collapse no-gutters collapse" id="bs-example-navbar-collapse-1" aria-expanded="true">
             <ul class="nav navbar-right top-nav">
                 <li class="active">
-                    <a href="index.html"><i class="fa fa-file-text fa-2x"></i><label>Declaraciones</label></a>
+                    <a href="demo.html"><i class="fa fa-file-text fa-2x"></i><label>Declaraciones</label></a>
                 </li>
                 <!--li class="active">
                     <a href="#"><i class="fa fa-user-secret fa-2x"></i><label>Funcionarios</label></a>
@@ -90,7 +90,7 @@
 
             <div class="col-md-3 text-center text-primary">
                 <i class="fa fa-info-circle fa-2x"></i>
-                <p>Seleccione al menos un ministro<br/>para analizar el patrimonio</p>
+                <p>Puede Seleccionar m&aacute;ximo 4 Funcionarios<br/>para analizar sus patrimonio</p>
             </div>
 
             <div class="col-md-4">
@@ -486,7 +486,7 @@
         <div id="no-datos" class="col-md-12 text-center text-primary"> <!--Ocultar cuando hay datos-->
             <br/><br/><br/>
             <i class="fa fa-info-circle fa-3x"></i>
-            <h4>Seleccione al menos un ministro<br/>para analizar el patrimonio</h4>
+            <h4>Seleccione al menos un Funcionario P&uacute;blico<br/>para analizar el patrimonio</h4>
         </div>
 
         <div id="mensaje" class="col-md-12 text-center hidden">
@@ -503,7 +503,7 @@
         </div>
 
         <!-- *************** PATRIMONIO DE LOS FUNCIONARIOS SELECCIONADOS *************** -->
-        <div id="with-datos" class="no-gutter hidden"> <!--style="display: none"--> <!--Ocultar cuando no hay datos-->
+        <div id="with-datos" class="no-gutter"> <!--style="display: none"--> <!--Ocultar cuando no hay datos-->
             <div class="col-md-2 col-lg-1 text-center">
 
                 <div class="thumbnail active blue sin_funcionario hidden">
@@ -563,6 +563,22 @@
                     </div>
                     <div class="panel-body">
                         <div id="morris-line-chart"></div>
+
+                        <br/>
+                        <h2 id="label-funcionario1"></h2>
+                        <div id="morris-line-funcionario1"></div>
+
+                        <br/>
+                        <h2 id="label-funcionario2"></h2>
+                        <div id="morris-line-funcionario2"></div>
+
+                        <br/>
+                        <h2 id="label-funcionario3"></h2>
+                        <div id="morris-line-funcionario3"></div>
+
+                        <br/>
+                        <h2 id="label-funcionario4"></h2>
+                        <div id="morris-line-funcionario4"></div>
                         <div class="text-right">
                             <a href="#">Ver comentarios <i class="fa fa-arrow-circle-right"></i></a>
                         </div>
@@ -590,7 +606,6 @@
 <!-- Morris Charts JavaScript -->
 <script src="js/plugins/morris/raphael.min.js"></script>
 <script src="js/plugins/morris/morris.js"></script>
-<script src="js/plugins/morris/morris-data.js"></script>
 
 <!-- Flot Charts JavaScript -->
 <!--[if lte IE 8]>

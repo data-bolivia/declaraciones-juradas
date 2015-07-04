@@ -840,11 +840,23 @@ Licensed under the BSD-2-Clause License.
     Line.prototype.hoverContentForRow = function(index) {
       var content, j, row, y, _i, _len, _ref;
       row = this.data[index];
-      content = "<div class='morris-hover-row-label'>" + row.label + "</div>";
+      var temp = row.label.split('-')
+      content = "<div class='morris-hover-row-label'>" + temp[2] + '/' + temp[1] + '/' + temp[0] + "</div>";
       _ref = row.y;
       for (j = _i = 0, _len = _ref.length; _i < _len; j = ++_i) {
         y = _ref[j];
-        content += "<div class='morris-hover-point' style='color: " + (this.colorFor(row, j, 'label')) + "'>\n  " + this.options.labels[j] + ":\n  " + (this.yLabelFormat(y)) + "\n <br/><a class='btn btn-success btn-sm' target='_blank' href='data/declaraciones/declaracion.pdf'><i class='fa fa-cloud-download'></i> Ver Declaración<a></div>";
+          console.log("label:[" + (this.yLabelFormat(y)) + "]");
+          if ((this.yLabelFormat(y)).length > 1) {
+              content += "<div class='morris-hover-point' style='color: "
+                  + (this.colorFor(row, j, 'label'))
+                  + "'>\n  " + this.options.labels[j] + ":\n  "
+                  //+ "'>\n ACTIVOS:  "
+                  + (this.yLabelFormat(y)) + ' Bs.'
+                  + "\n <br/>"
+                  + "<a class='btn btn-success btn-sm' target='_blank' href='data/declaraciones/declaracion.pdf'>"
+                  + "<i class='fa fa-cloud-download'></i> Ver Declaración<a>"
+                  + "</div>";
+          }
       }
       if (typeof this.options.hoverCallback === 'function') {
         content = this.options.hoverCallback(index, this.options, content, row.src);
