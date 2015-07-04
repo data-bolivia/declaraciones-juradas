@@ -97,9 +97,10 @@ $(document).ready(function () {
             })
             .get();
 
-        var json_site = $.getJSON('data/declaraciones/data.json');
-        console.log(json_site);
-        var json_data = $.parseJSON(temp_data);
+        var json_site = $.getJSON('data/declaraciones/data.json', function(data){
+            temp_data = data;
+        });
+        //var json_data = $.parseJSON(temp_data);
         var data_funcionarios_seleccionados = [];
         for (var i = 0; i < documentos.length; i++) {
             var doc = documentos[i];
