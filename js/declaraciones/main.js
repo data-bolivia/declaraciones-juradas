@@ -218,6 +218,7 @@ $(document).ready(function () {
         {
             $('h2#label-funcionario1').text('');
         }
+
         if (funcionario2_data.length > 2) {
             $('h2#label-funcionario2').text(data[1].funcionario);
         }
@@ -225,6 +226,7 @@ $(document).ready(function () {
         {
             $('h2#label-funcionario2').text('');
         }
+
         if (funcionario3_data.length > 2) {
             $('h2#label-funcionario3').text(data[2].funcionario);
         }
@@ -232,6 +234,7 @@ $(document).ready(function () {
         {
             $('h2#label-funcionario3').text('');
         }
+
         if (funcionario4_data.length > 2) {
             $('h2#label-funcionario4').text(data[3].funcionario);
         }
